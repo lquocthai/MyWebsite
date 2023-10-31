@@ -40,9 +40,6 @@
         display: block;
         margin: 50px 0;
     }
-    .infor {
-        margin-top: 30px;
-    }
     .img-about {
         width: 100%;
         display: flex;
@@ -50,6 +47,12 @@
     }
     .img-about .img-fluid {
         height: 370px;
+    }
+    .infor {
+        margin-top: 30px;
+    }
+    .infor > h2 {
+        padding: 0 10px;
     }
     #container-home {
         padding: 30px 0;
