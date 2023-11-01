@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    /* scroll-behavior: smooth; */
+    /* hành vi cuộn */
+    font-family: Helvetica,  Arial, sans-serif;
+}
+.col-lg-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.p-4 {
+    padding: 1.5rem!important;
+}
+.pl-4, .px-4 {
+    padding-left: 1.5rem!important;
+}
+.main-contact{
+    margin-top: 65px;
+    padding: 40px 0 55px;
+    background-color: #ccc;
+    overflow: hidden;
+}
+.background-heading-contact {
+    font-size: 100px;
+}
+.heading-contact {
+    text-shadow: 2px 2px 2px #fff;
+}
+.main-contact .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+}
+.main-contact .contact-item {
+    width: 30%;
+    margin: 0;
+    flex-direction: row;
+}
+.main-contact .contact-item {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+    display: -webkit-inline-box;
+}
+.contact-item .icon {
+    height: 50px;
+    width: 50px;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: rgb(65, 65, 230);
+}
+.contact-item .icon > i {
+    font-size: 30px;   
+}
+.contact-item .contact-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+.contact-info h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.contact-info > a {
+    color: #0000ee;
+    opacity: 1;
+}
+.contact-info > a:hover {
+    opacity: 0.7;
+}
+/* new */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 45px 15% 0;
+}
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.form-row .control-group {
+    padding-right: 5px;
+    padding-left: 5px;
+    flex-grow: 1;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #7b7f83;
+}
+
+button, input,textarea {
+    font-family: inherit;
+}
+.help-block {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+textarea.form-control {
+    height: auto;
+}
+.btn {
+    padding: 10px 25px;
+    border-radius: 100px;
+}
+.btn-outline-primary {
+    color: #0bceaf;
+    border-color: #0bceaf;
+}

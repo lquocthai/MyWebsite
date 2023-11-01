@@ -18,6 +18,9 @@
 }
     /* mobile */
 @media (max-width: 46.1875em) {
+    .background-heading {
+        font-size: 70px !important;
+    }
     .menu-mobile-btn{
         display: block;
     }
@@ -32,9 +35,6 @@
     }
     .nav>ul>li {
         padding: 5px 0;
-    }
-    .background-heading {
-        font-size: 90px;
     }
     .container-about {
         display: block;
@@ -75,5 +75,9 @@
     }
     .infor-home > h2 {
         font-size: 20px;
+    }
+    .main-contact .contact-items {
+        display: block;
+        text-align: center;
     }
 }
