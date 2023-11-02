@@ -20,31 +20,26 @@ html {
 .pl-4, .px-4 {
     padding-left: 1.5rem!important;
 }
-.main-contact{
-    margin-top: 65px;
-    padding: 40px 0 55px;
-    background-color: #ccc;
-    overflow: hidden;
-}
+
 .background-heading-contact {
     font-size: 100px;
 }
 .heading-contact {
     text-shadow: 2px 2px 2px #fff;
 }
-.main-contact .contact-items {
+.main-heding .contact-items {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0;
 }
-.main-contact .contact-item {
+.main-heading .contact-item {
     width: 30%;
     margin: 0;
     flex-direction: row;
 }
-.main-contact .contact-item {
+.main-heading .contact-item {
     width: 80%;
     padding: 20px;
     text-align: center;
