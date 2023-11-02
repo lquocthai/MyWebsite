@@ -27,7 +27,7 @@ html {
 .heading-contact {
     text-shadow: 2px 2px 2px #fff;
 }
-.main-heding .contact-items {
+.main-heading .contact-items {
     width: 100%;
     display: flex;
     flex-direction: row;
