@@ -8,6 +8,25 @@ html {
     /* hành vi cuộn */
     font-family: Helvetica,  Arial, sans-serif;
 }
+/* heading */
+.main-heading{
+    margin-top: 65px;
+    padding: 40px 0 55px;
+    background-color: #ccc;
+    overflow: hidden;
+}
+.text-white {
+    color: #fff;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
 .d-block {
     display: block !important;
 }
@@ -19,6 +38,9 @@ html {
 }
 .justify-content-between {
     justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
 }
 .fixed-top {
     position: fixed;

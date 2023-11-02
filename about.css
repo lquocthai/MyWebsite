@@ -8,27 +8,6 @@ html {
     /* hành vi cuộn */
     font-family: Helvetica,  Arial, sans-serif;
 }
-.text-uppercase {
-    text-transform: uppercase!important;
-}
-.position-relative{
-    position: relative;
-}
-.position-absolute {
-    position: absolute;
-}
-.justify-content-center{
-    justify-content: center;
-}
-.text-white {
-    color: #fff;
-}
-.main{
-    margin-top: 65px;
-    padding: 40px 0 55px;
-    background-color: #ccc;
-    overflow: hidden;
-}
 .background-heading {
     font-size: 100px;
 }
