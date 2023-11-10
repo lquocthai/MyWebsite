@@ -88,5 +88,8 @@
     #idInput,
     .btn-add{
         margin-top: 10px;
-}
+    }
+    td {
+        line-height: 1.4;
+    }
 }
