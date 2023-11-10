@@ -76,6 +76,7 @@ html {
 }
 #studentTable .namCol {
     padding: 10px 20px;
+    text-align: left;
 }
 #studentTable .idCol {
     padding: 0 30px;
@@ -83,4 +84,7 @@ html {
 #studentTable {
     display: flex;
     justify-content: center;
+}
+td {
+    text-align: left;
 }
