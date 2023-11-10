@@ -88,3 +88,6 @@ html {
 td {
     text-align: left;
 }
+th, td {
+    border: 1px solid black;
+}
