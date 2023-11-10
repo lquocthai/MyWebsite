@@ -47,14 +47,19 @@ html {
     text-align: center;
     line-height: 3.0;
 }
-#Design .download-btn {
+#Design .figma-btn {
+    margin-left: 10px;
+}
+#Design .download-btn,
+#Design .figma-btn {
     color: #fff;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
     background-color: #000;
 }
-#Design .download-btn:hover {
+#Design .download-btn:hover,
+#Design .figma-btn:hover {
     background-color: #ccc;
     color: #000;
 }
