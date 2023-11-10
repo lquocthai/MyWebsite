@@ -45,7 +45,7 @@ html {
 }
 #Implement {
     text-align: center;
-    line-height: 3.0;
+    /* line-height: 3.0; */
 }
 #Design .figma-btn {
     margin-left: 10px;
@@ -83,9 +83,10 @@ html {
     padding: 10px 20px;
     text-align: left;
 }
-#studentTable .idCol {
-    padding: 0 30px;
+th.nameCol {
+    padding: 0 15px;
 }
+
 #studentTable {
     display: flex;
     justify-content: center;
