@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./lab4.css">
+    <link rel="stylesheet" href="./reponsive.css">
+</head>
+<body>
+    <header id="heading" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div><h1 class="logo"><a href="">FIT-NLU</a></h1></div>
+            <div class="nav">
+                <ul class="nav-link d-flex">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="">resume</a></li>
+                    <li><a href="">lab4</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+                <div id="mobile-menu" class="menu-mobile-btn">
+                    <i class="menu-icon fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-lab4">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Requirement')">Requirement</button>
+            <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
+            <button class="tablinks" onclick="openCity(event, 'Implement')">Implement</button>
+        </div>
+        <div id="Requirement" class="tabcontent">
+            
+            <p>Yêu cầu: Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như lớp môn học, giảng viên,… Sau đó thiết kế chức năng Quản lý đối tượng đó trên html bao gồm các tính năng thêm, sửa, xóa, tìm kiếm cho đối tượng đó. Ví dụ, làm chức năng Quản lý Sinh viên, bao gôm tính năng thêm, sửa, xóa, tìm kiếm. </p>
+        </div>
+        
+        <div id="Design" class="tabcontent">
+            <img src="./images/qlsv.jpg" alt="Quản Lí Sinh Viên" height="500px" width="100%">
+            <p class="help-block"></p>
+            <a href="./images/qlsv.jpg" download class="download-btn">download</a>
+            <p class="help-block"></p>
+        </div>
+        
+        <div id="Implement" class="tabcontent">
+
+            <h2>Quản lý Sinh viên</h2>
+    
+            <form id="studentForm">
+                <input type="text" id="nameInput" placeholder="Tên sinh viên">
+                <input type="text" id="idInput" placeholder="Mã sinh viên">
+                <button type="button" onclick="addStudent()" class="btn-add">Thêm sinh viên</button>
+            </form>
+            
+            <h3>Danh sách sinh viên</h3>
+            
+            <table id="studentTable">
+                <tr>
+                    <th class="nameCol">Họ&Tên</th>
+                    <th class="nameCol idCol">MSSV</th>
+                    <th class="nameCol">Hành động</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script>
+        // menu 
+        var heading = document.getElementById('heading');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headingHeight = heading.clientHeight;
+
+        mobileMenu.onclick = function() {
+            var isClosed = heading.clientHeight == headingHeight;
+            if (isClosed) {
+                heading.style.height = 'auto';
+            } else {
+                heading.style.height = null;
+            }
+        }
+        // menu
+
+        // tab
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+        // tab
+
+        // implement
+        function addStudent() {
+            var name = document.getElementById("nameInput").value;
+            var id = document.getElementById("idInput").value;
+            
+            var table = document.getElementById("studentTable");
+            var row = table.insertRow(-1);
+            
+            var nameCell = row.insertCell(0);
+            var idCell = row.insertCell(1);
+            var actionCell = row.insertCell(2);
+            
+            nameCell.innerHTML = name;
+            idCell.innerHTML = id;
+            actionCell.innerHTML = '<button onclick="editStudent(this)">Sửa</button> <button onclick="deleteStudent(this)">Xóa</button>';
+            
+            document.getElementById("nameInput").value = "";
+            document.getElementById("idInput").value = "";
+        }
+        
+        function editStudent(button) {
+            var row = button.parentNode.parentNode;
+            var name = row.cells[0].innerHTML;
+            var id = row.cells[1].innerHTML;
+            
+            document.getElementById("nameInput").value = name;
+            document.getElementById("idInput").value = id;
+            
+            row.remove();
+        }
+        
+        function deleteStudent(button) {
+            var row = button.parentNode.parentNode;
+            row.remove();
+        }
+        // implement
+    </script>
+</body>
+</html>
