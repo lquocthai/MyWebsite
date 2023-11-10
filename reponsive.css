@@ -80,4 +80,13 @@
         display: block;
         text-align: center;
     }
+    /* lab4 */
+    form#studentForm {
+        display: inline-grid;
+    }
+    #nameInput,
+    #idInput,
+    .btn-add{
+        margin-top: 10px;
+}
 }
