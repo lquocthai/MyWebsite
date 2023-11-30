@@ -43,6 +43,10 @@ html {
     border: 1px solid #ccc;
     border-top: none;
 }
+div#Requirement {
+    display: block;
+    padding: 20px;
+}
 #Implement {
     text-align: center;
     line-height: 3.0;
