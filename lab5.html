@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./lab5.css">
+    <link rel="stylesheet" href="./reponsive.css">
+</head>
+<body>
+    <header id="heading" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div><h1 class="logo"><a href="">FIT-NLU</a></h1></div>
+            <div class="nav">
+                <ul class="nav-link d-flex">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="">resume</a></li>
+                    <li><a href="./Lab4.html">lab4</a></li>
+                    <li><a href="" style="color: #ccc;">lab5</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+                <div id="mobile-menu" class="menu-mobile-btn">
+                    <i class="menu-icon fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-lab4">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Requirement')">Requirement</button>
+            <button class="tablinks" onclick="openCity(event, 'User-scenario')">User scenario</button>
+            <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
+            <button class="tablinks" onclick="openCity(event, 'Implement')">Implement</button>
+        </div>
+        <div id="Requirement" class="tabcontent">
+
+            <p class="req">(1) Tạo ra một user scenario.</p>
+            <p class="req">(2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên công cụ thiết kế đã
+                chọn. Sau đó thiết kế trên Figma rồi chuyển sang html tương ứng cho thiết kế này.</p>
+            <p class="req">Upload lên github: trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn của
+                file thiết kế ở (2).</p>
+        </div>
+
+        <div id="User-scenario" class="tabcontent">
+            <img src="./images/Slide2.png" alt="">
+
+        </div>
+
+        <div id="Design" class="tabcontent">
+            <div class="images">
+                <div>
+                    <p style="font-weight: bold; font-size: 20px;">Design on paper</p>
+                    <img src="./images/thietke.jpg" alt="" style="height: 576px;">
+                    <a href="./images/thietke.jpg" download="design lab5 by figma" class="btn-dl"><button class="btn-download">Download</button></a>
+
+                </div>
+                <div>
+                    <p style="font-weight: bold; font-size: 20px;">Design on figma</p>
+                    <img src="./images/figma.png" alt="" style="height: 576px;">
+                    <a href="./images/figma.png" download="design lab5 by figma" class="btn-dl"><button class="btn-download">Download</button></a>
+                </div>
+            </div>
+                <p class="help-block"></p>
+                <div class="view-design">
+                    <a href="https://www.figma.com/file/yjrNt8yUBV4h7Ss29vkAU2/Untitled?type=design&node-id=0%3A1&mode=design&t=FMkC2hBQfadGcgX7-1" class="figma-btn">View design</a>
+                </div>
+                    <p class="help-block"></p>
+            </div>
+        </div>
+
+        <div id="Implement" class="tabcontent">
+            <div class="booking-form">
+                <h2>Đặt Gói Nghỉ Dưỡng</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Họ và tên" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-in">Ngày nhận phòng:</label>
+                        <input type="date" id="check-in" name="check-in"  required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out">Ngày trả phòng:</label>
+                        <input type="date" id="check-out" name="check-out" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="num-people">Số người:</label>
+                        <input type="number" id="num-people" name="num-people" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="yêu cầu khác(không bắt buộc)"></textarea>
+                    </div>
+                    <div class="pay">
+                        <p>Tổng tiền:</p>
+                        <p style="color: #f30c28;;">2.690.000₫</p>
+                    </div>
+                    <button type="submit" class="btn-oder">Đặt Ngay</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        // tab
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // tab
+
+        // implement
+        function addStudent() {
+            var name = document.getElementById("nameInput").value;
+            var id = document.getElementById("idInput").value;
+
+            var table = document.getElementById("studentTable");
+            var row = table.insertRow(-1);
+
+            var nameCell = row.insertCell(0);
+            var idCell = row.insertCell(1);
+            var actionCell = row.insertCell(2);
+
+            nameCell.innerHTML = name;
+            idCell.innerHTML = id;
+            actionCell.innerHTML = '<button onclick="editStudent(this)">Sửa</button> <button onclick="deleteStudent(this)">Xóa</button>';
+
+            document.getElementById("nameInput").value = "";
+            document.getElementById("idInput").value = "";
+        }
+
+        function editStudent(button) {
+            var row = button.parentNode.parentNode;
+            var name = row.cells[0].innerHTML;
+            var id = row.cells[1].innerHTML;
+
+            document.getElementById("nameInput").value = name;
+            document.getElementById("idInput").value = id;
+
+            row.remove();
+        }
+
+        function deleteStudent(button) {
+            var row = button.parentNode.parentNode;
+            row.remove();
+        }
+        // implement
+    </script>
+</body>
+</html>
