@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lab5</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./lab5.css">
     <link rel="stylesheet" href="./reponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <header id="heading" class="fixed-top">
@@ -105,6 +107,20 @@
         </div>
     </div>
     <script>
+        // menu 
+        var heading = document.getElementById('heading');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headingHeight = heading.clientHeight;
+
+        mobileMenu.onclick = function() {
+            var isClosed = heading.clientHeight == headingHeight;
+            if (isClosed) {
+                heading.style.height = 'auto';
+            } else {
+                heading.style.height = null;
+            }
+        }
+        // menu
         // tab
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
