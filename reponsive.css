@@ -21,18 +21,23 @@
     .background-heading {
         font-size: 70px !important;
     }
+    .menu-mobile-btnL,
     .menu-mobile-btn{
         display: block;
     }
+    .menu-mobile-btnL:hover,
     .menu-mobile-btn:hover {
         background-color: #ccc;
     }
+    .containerL,
     .container {
         display: block;
     }
+    .containerL .nav-linkL,
     .container .nav-link{
         display: block;
     }
+    .navL>ul>li,
     .nav>ul>li {
         padding: 5px 0;
     }

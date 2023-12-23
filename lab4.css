@@ -43,6 +43,10 @@ html {
     border: 1px solid #ccc;
     border-top: none;
 }
+.tabcontent .req {
+    line-height: 1.6;
+    opacity: 0.7;
+}
 div#Requirement {
     display: block;
     padding: 20px;
@@ -76,8 +80,7 @@ div#Requirement {
     padding: 7px 5px;
 }
 .btn-add{
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 .btn-add:hover {
     cursor: pointer;
@@ -90,7 +93,6 @@ div#Requirement {
 th.nameCol {
     padding: 0 15px;
 }
-
 #studentTable {
     display: flex;
     justify-content: center;

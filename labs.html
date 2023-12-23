@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="./lab7demo/css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./lab7demo/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/styleLabs.css">
+    <link rel="stylesheet" href="./assets/css/styles-ex1.css">
+    <link rel="stylesheet" href="./assets/css/style-ex2.css">
+
+    <!-- Template Main CSS File -->
+    <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./lab4.css">
+    <link rel="stylesheet" href="./lab5.css">
+    <link rel="stylesheet" href="./reponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header id="headingL" class="fixed-top">
+        <div class="containerL d-flex align-items-center justify-content-between" style="height: 64.8px; padding: 0;">
+            <div>
+                <h1 class="logoL"><a href="">FIT-NLU</a></h1>
+            </div>
+            <div class="navL">
+                <ul class="nav-linkL d-flex" style="padding: 0;">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="">resume</a></li>
+                    <li><a href="" style="color: #ccc;">labs</a></li>
+                    <li><a href="./Lab4.html">lab4</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+                <div id="mobile-menuL" class="menu-mobile-btnL">
+                    <i class="menu-iconL fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="about-mf sect-pt4 route" style="padding-top: 85px;">
+
+        <div class="tabs-main">
+
+            <input type="radio" id="lab1" name="tab-control" checked>
+            <input type="radio" id="lab2" name="tab-control">
+            <input type="radio" id="lab3" name="tab-control">
+            <input type="radio" id="lab4" name="tab-control">
+            <ul>
+                <li title="Features"><label for="lab1" role="button"><br><span>Lab 4</span></label></li>
+                <li title="Delivery Contents"><label for="lab2" role="button"><br><span>Lab 5</span></label></li>
+                <li title="Shipping"><label for="lab3" role="button"><br><span>Lab 6</span></label></li>
+                <li title="Returns"><label for="lab4" role="button"><br><span>Lab 7</span></label></li>
+            </ul>
+
+            <div class="slider">
+                <div class="indicator"></div>
+            </div>
+            <div class="content">
+                <section>
+                    <div class="main-lab4">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'Requirement')">Requirement</button>
+                            <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
+                            <button class="tablinks" onclick="openCity(event, 'Implement')">Implement</button>
+                        </div>
+                        <div id="Requirement" class="tabcontent">
+
+                            <p class="req"><span style="font-size: 20px;">&#8226;</span> Chọn 1 đối tượng bất kỳ trong
+                                thế giới thực, ví dụ như lớp môn học,
+                                giảng viên,… Sau đó thiết kế chức năng Quản lý đối tượng đó trên html bao gồm các tính
+                                năng thêm, sửa, xóa, tìm kiếm cho đối tượng đó. Ví dụ, làm chức năng Quản lý Sinh viên,
+                                bao gôm tính năng thêm, sửa, xóa, tìm kiếm. </p>
+                        </div>
+
+                        <div id="Design" class="tabcontent">
+                            <img src="./images/qlsv.jpg" alt="Quản Lí Sinh Viên" height="500px" width="100%">
+                            <div class="d-flex">
+                                <p class="help-block"></p>
+                                <a href="./images/qlsv.jpg" download class="download-btn">download</a>
+                                <p class="help-block"></p>
+                                <!-- <p class="help-block"></p> -->
+                                <a href="" class="figma-btn">Go To Figma</a>
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+
+                        <div id="Implement" class="tabcontent">
+
+                            <h2>Quản lý Sinh viên</h2>
+
+                            <form id="studentForm">
+                                <input type="text" id="nameInput" placeholder="Tên sinh viên">
+                                <input type="text" id="idInput" placeholder="Mã sinh viên">
+                                <button type="button" onclick="addStudent()" class="btn-add">Thêm sinh viên</button>
+                            </form>
+
+                            <h3>Danh sách sinh viên</h3>
+
+                            <table id="studentTable">
+                                <tr>
+                                    <th class="nameCol">Họ&Tên</th>
+                                    <th class="nameCol idCol">MSSV</th>
+                                    <th class="nameCol">Hành động</th>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                    <script>
+
+                        // tab
+                        function openCity(evt, cityName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+                        // tab
+
+                        // implement
+                        function addStudent() {
+                            var name = document.getElementById("nameInput").value;
+                            var id = document.getElementById("idInput").value;
+
+                            var table = document.getElementById("studentTable");
+                            var row = table.insertRow(-1);
+
+                            var nameCell = row.insertCell(0);
+                            var idCell = row.insertCell(1);
+                            var actionCell = row.insertCell(2);
+
+                            nameCell.innerHTML = name;
+                            idCell.innerHTML = id;
+                            actionCell.innerHTML = '<button onclick="editStudent(this)">Sửa</button> <button onclick="deleteStudent(this)">Xóa</button>';
+
+                            document.getElementById("nameInput").value = "";
+                            document.getElementById("idInput").value = "";
+                        }
+
+                        function editStudent(button) {
+                            var row = button.parentNode.parentNode;
+                            var name = row.cells[0].innerHTML;
+                            var id = row.cells[1].innerHTML;
+
+                            document.getElementById("nameInput").value = name;
+                            document.getElementById("idInput").value = id;
+
+                            row.remove();
+                        }
+
+                        function deleteStudent(button) {
+                            var row = button.parentNode.parentNode;
+                            row.remove();
+                        }
+                        // implement
+                    </script>
+                </section>
+                <section>
+                    <div class="main-lab4">
+                        <div class="tab">
+                            <button class="tablinks-lab5"
+                                onclick="openCityL5(event, 'Requirement-lab5')">Requirement</button>
+                            <button class="tablinks-lab5" onclick="openCityL5(event, 'User-scenario-lab5')">User
+                                scenario</button>
+                            <button class="tablinks-lab5" onclick="openCityL5(event, 'Design-lab5')">Design</button>
+                            <button class="tablinks-lab5"
+                                onclick="openCityL5(event, 'Implement-lab5')">Implement</button>
+                        </div>
+                        <div id="Requirement-lab5" class="tabcontent-lab5">
+
+                            <p class="req"><span style="font-size: 20px;">&#8226;</span>(1) Tạo ra một user scenario.
+                            </p>
+                            <p class="req"><span style="font-size: 20px;">&#8226;</span>(2) Chọn 1 bước trong user
+                                scenario để thiết kế 1 form giao diện Web trên
+                                công cụ thiết kế đã
+                                chọn. Sau đó thiết kế trên Figma rồi chuyển sang html tương ứng cho thiết kế này.</p>
+                            <p class="req"><span style="font-size: 20px;">&#8226;</span>Upload lên github: trong file
+                                html có chèn hình ảnh của user scenario ở (1)
+                                và đường dẫn của
+                                file thiết kế ở (2).</p>
+                        </div>
+
+                        <div id="User-scenario-lab5" class="tabcontent-lab5">
+                            <img src="./images/Slide2.png" alt="" style="width: 80%;">
+
+                        </div>
+
+                        <div id="Design-lab5" class="tabcontent-lab5">
+                            <div class="images">
+                                <div>
+                                    <p style="font-weight: bold; font-size: 20px;">Design on paper</p>
+                                    <img src="./images/thietke.jpg" alt="" style="height: 576px;">
+                                    <a href="./images/thietke.jpg" download="design lab5 by figma"
+                                        class="btn-dl"><button class="btn-download-lab5">Download</button></a>
+
+                                </div>
+                                <div>
+                                    <p style="font-weight: bold; font-size: 20px;">Design on figma</p>
+                                    <img src="./images/figma.png" alt="" style="height: 576px;">
+                                    <a href="./images/figma.png" download="design lab5 by figma" class="btn-dl"><button
+                                            class="btn-download-lab5">Download</button></a>
+                                </div>
+                            </div>
+                            <p class="help-block"></p>
+                            <div class="view-design">
+                                <a href="https://www.figma.com/file/yjrNt8yUBV4h7Ss29vkAU2/Untitled?type=design&node-id=0%3A1&mode=design&t=FMkC2hBQfadGcgX7-1"
+                                    class="figma-btn">View design</a>
+                            </div>
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+
+                    <div id="Implement-lab5" class="tabcontent-lab5">
+                        <div class="booking-form">
+                            <h2>Đặt Gói Nghỉ Dưỡng</h2>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Họ và tên" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="check-in">Ngày nhận phòng:</label>
+                                    <input type="date" id="check-in" name="check-in" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="check-out">Ngày trả phòng:</label>
+                                    <input type="date" id="check-out" name="check-out" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="num-people">Số người:</label>
+                                    <input type="number" id="num-people" name="num-people" min="1" value="1" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message"
+                                        placeholder="yêu cầu khác(không bắt buộc)"></textarea>
+                                </div>
+                                <div class="pay">
+                                    <p>Tổng tiền:</p>
+                                    <p style="color: #f30c28;;">2.690.000₫</p>
+                                </div>
+                                <button type="submit" class="btn-oder">Đặt Ngay</button>
+                            </form>
+                        </div>
+                    </div>
+                    <script>
+                        // tab
+                        function openCityL5(evtL5, cityNameL5) {
+                            var iL5, tabcontentL5, tablinksL5;
+                            tabcontentL5 = document.getElementsByClassName("tabcontent-lab5");
+                            for (iL5 = 0; iL5 < tabcontentL5.length; iL5++) {
+                                tabcontentL5[iL5].style.display = "none";
+                            }
+                            tablinksL5 = document.getElementsByClassName("tablinks-lab5");
+                            for (iL5 = 0; iL5 < tablinksL5.length; iL5++) {
+                                tablinksL5[iL5].className = tablinksL5[iL5].className.replace(" active", "");
+                            }
+                            document.getElementById(cityNameL5).style.display = "block";
+                            evtL5.currentTarget.className += " active";
+                        }
+                        // tab
+
+                    </script>
+                </section>
+                <section>
+                    <!-- lab6 -->
+                    <div class="main-lab4">
+                        <div class="tab">
+                            <button class="tablinksL6"
+                                onclick="openCityL6(event, 'Requirement-lab6')">Requirement</button>
+                            <button class="tablinksL6" onclick="openCityL6(event, 'EX1')">EX1</button>
+                            <button class="tablinksL6" onclick="openCityL6(event, 'EX2')">EX2</button>
+                        </div>
+                        <div id="Requirement-lab6" class="tabcontent-lab6">
+
+                            <p class="req"><span style="font-size: 20px;">&#8226;</span>Trong menu Labs, tạo 1 menu Lab6
+                                (file lab6.html) sau đó tạo 2 tab Ex1, Ex2 </p>
+                            <p class="req"><span style="font-size: 20px;">&#8226;</span>Ex1: Thiết kế một trang Web đơn
+                                giản sử dụng mẫu F-pattern ==> chuyển sang html (ex1.html)</p>
+                            <p class="req"><span style="font-size: 20px;">&#8226;</span>Ex2: Thiết kế một trang Web sử
+                                dụng mẫu Z-pattern ==> chuyển sang html (ex2.html)</p>
+                            <p class="req"><span style="font-size: 20px;">&#8226;</span>Với cả Ex1, Ex2: Tạo 2 tab
+                                Design và Implementation: </p>
+                            <p class="req">+ Design: chụp lại hình ảnh để có cái nhìn tổng quan về file thiết kế (thiết
+                                kế trên giấy và Figma), có nút Download để download file thiết kế về nếu muốn</p>
+                            <p class="req">+ Implementation: nội dung phần hiện thực trên html</p>
+                            <p class="req"><span style="font-size: 20px;">&#8226;</span>Upload lên github</p>
+                        </div>
+
+                        <div id="EX1" class="tabcontent-lab6">
+                            <!-- <div class="main-lab4">
+                                <div class="tab">
+                                    <button class="tablinksE1"
+                                        onclick="openCityE1(event, 'DesignE1')">Design</button>
+                                    <button class="tablinksE1" onclick="openCityE1(event, 'ImplementE1')">Implement</button>                             
+                                </div>
+                                <div id="DesignE1" class="tabcontent-ex1" style="background-color: #000;">
+                                    <a href="fuck it" style="color: #f30c28; font-size: 40px;"></a>
+                                    <img src="./images/background-home.jpg" alt="" style="width: 100%;" height="100%">
+                                    
+                                </div>
+                                <div id="ImplementE1" class="tabcontent-ex1" style="background-color: #ccc;">
+                                    <div class="booking-form">
+                                        <h2>Đặt Gói Nghỉ Dưỡng</h2>
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="text" id="name" name="name" placeholder="Họ và tên" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="check-in">Ngày nhận phòng:</label>
+                                                <input type="date" id="check-in" name="check-in" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="check-out">Ngày trả phòng:</label>
+                                                <input type="date" id="check-out" name="check-out" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="num-people">Số người:</label>
+                                                <input type="number" id="num-people" name="num-people" min="1" value="1" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea id="message" name="message"
+                                                    placeholder="yêu cầu khác(không bắt buộc)"></textarea>
+                                            </div>
+                                            <div class="pay">
+                                                <p>Tổng tiền:</p>
+                                                <p style="color: #f30c28;;">2.690.000₫</p>
+                                            </div>
+                                            <button type="submit" class="btn-oder">Đặt Ngay</button>
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                            </div> -->
+                            <div style="height: 100%; width: 100%;" class="tab-lab3">
+                                <div class="container-ex1">
+                                    <div style="height: 2300px;" class="tabs-ex1">
+                                        <div class="tabby-tab-ex1">
+                                            <input type="radio" id="ex1-design" name="tabby-tabs" checked>
+                                            <label for="ex1-design">Design</label>
+                                            <div class="tabby-content-ex1">
+
+                                                <div style="align-items: flex-start;" class="container-design-lab1">
+
+                                                    <div style="flex: 1" class="on-giay">
+                                                        <h4>Design on paper</h4>
+                                                        <div class="design-by-figma">
+                                                            <div class="design-lab1-1">
+                                                                <img style="width:100% ; height: 937px;"
+                                                                    src="assets/img/ex1-tren-giay.jpg" alt="bbbb">
+                                                                <a href="assets/img/ex1-tren-giay.jpg"
+                                                                    download="design lab1 by figma"><button
+                                                                        class="btn-download">Download</button></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="flex: 1;" class="on-figma">
+                                                        <h4>Design on figma</h4>
+
+                                                        <div class="design-by-figma">
+                                                            <div class="design-lab1-1">
+                                                                <img src="assets/img/design-ex1.png" alt="">
+                                                                <a href="assets/img/design-ex1.png"
+                                                                    download="design lab1 by figma"><button
+                                                                        class="btn-download">Download</button></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 10px;"
+                                                    class="btn-goToDs">
+                                                    <button class="btn-3"><span><a
+                                                                href="https://www.figma.com/community/file/1046697864314544239/Lab3-Ex1">View
+                                                                Design</a></span></button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="tabby-tab-ex1">
+                                            <input type="radio" id="ex1-implement" name="tabby-tabs">
+                                            <label for="ex1-implement">Implement</label>
+                                            <div class="tabby-content-ex1">
+                                                <!-- Responsive navbar-->
+                                                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                                    <div class="container">
+                                                        <a class="navbar-brand" href="#!">Emperor</a>
+                                                        <button class="navbar-toggler" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#navbarSupportedContent"
+                                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                                            aria-label="Toggle navigation"><span
+                                                                class="navbar-toggler-icon"></span></button>
+                                                        <div class="collapse navbar-collapse"
+                                                            id="navbarSupportedContent">
+                                                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="#">Home</a></li>
+                                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="#!">About</a></li>
+                                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="#!">Contact</a></li>
+                                                                <li class="nav-item"><a class="nav-link active"
+                                                                        aria-current="page" href="#">Blog</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                                <!-- Page header with logo and tagline-->
+                                                <header style="padding-top: 0px; margin: 0px;"
+                                                    class="py-5 bg-light border-bottom mb-4">
+                                                    <div class="container">
+                                                        <div class="text-center my-5">
+                                                            <h1 style="padding: 0;" class="fw-bolder">Welcome to Blog
+                                                                Home!</h1>
+                                                            <p class="lead mb-0">Công nghệ & Cuộc sống</p>
+                                                        </div>
+                                                    </div>
+                                                </header>
+                                                <!-- Page content-->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <!-- Blog entries-->
+                                                        <div class="col-lg-8">
+                                                            <!-- Featured blog post-->
+                                                            <div class="card mb-4">
+                                                                <a href="#!"><img class="card-img-top"
+                                                                        src="https://storage.googleapis.com/ops-shopee-files-live/live/shopee-blog/2021/10/666d9cb1-cach-tiet-kiem-dien-tu-lanh-1.jpg"
+                                                                        alt="..." /></a>
+                                                                <div class="card-body">
+                                                                    <div class="small text-muted">January 1, 2021</div>
+                                                                    <h2 style="display: block;" class="card-title">Cách
+                                                                        tiết kiệm điện tủ lạnh đơn giản, hiệu quả</h2>
+                                                                    <p class="card-text">Một số mẹo tiết kiệm điện cho
+                                                                        tủ lạnh dưới đây sẽ giúp gia đình bạn bớt được
+                                                                        những chi phí không tên. Vì thế đừng bỏ qua nhé!
+                                                                    </p>
+                                                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Nested row for non-featured blog posts-->
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <!-- Blog post-->
+                                                                    <div class="card mb-4">
+                                                                        <a href="#!"><img class="card-img-top"
+                                                                                src="https://storage.googleapis.com/ops-shopee-files-live/live/shopee-blog/2021/11/928391a0-nen-mua-webcam-nao-cho-may-tinh-1.jpg"
+                                                                                alt="..." /></a>
+                                                                        <div class="card-body">
+                                                                            <div class="small text-muted">January 1,
+                                                                                2021</div>
+                                                                            <h2 style="display: block;"
+                                                                                class="card-title h4">Nên mua webcam nào
+                                                                                cho máy tính của bạn mượt nhất?</h2>
+                                                                            <p class="card-text">Hầu hết các loại máy
+                                                                                tính hiện nay đều có thể được trang bị
+                                                                                webcam HD riêng. Tuy nhiên có rất nhiều
+                                                                                người dùng...
+                                                                            </p>
+                                                                            <a class="btn btn-primary" href="#!">Read
+                                                                                more →</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Blog post-->
+                                                                    <div class="card mb-4">
+                                                                        <a href="#!"><img class="card-img-top"
+                                                                                src="https://gomhang.vn/images/stories/virtuemart/product/ap1043.png"
+                                                                                alt="..." /></a>
+                                                                        <div class="card-body">
+                                                                            <div class="small text-muted">January 1,
+                                                                                2021</div>
+                                                                            <h2 style="display: block;"
+                                                                                class="card-title h4">Cách kiểm tra
+                                                                                Airpods chính hãng cực đơn giản cho dân
+                                                                                không chuyên</h2>
+                                                                            <p class="card-text">Airpods hiện đang là
+                                                                                một trong những phụ kiện thông minh của
+                                                                                Apple nhận được rất nhiều sự quan tâm và
+                                                                                yêu thích từ người dùng.</p>
+                                                                            <a class="btn btn-primary" href="#!">Read
+                                                                                more →</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <!-- Blog post-->
+                                                                    <div class="card mb-4">
+                                                                        <a href="#!"><img class="card-img-top"
+                                                                                src="https://storage.googleapis.com/ops-shopee-files-live/live/shopee-blog/2021/11/ec80fd5a-cach-ket-noi-webcam-voi-may-tinh-2.jpg"
+                                                                                alt="..." /></a>
+                                                                        <div class="card-body">
+                                                                            <div class="small text-muted">January 1,
+                                                                                2021</div>
+                                                                            <h2 style="display: block;"
+                                                                                class="card-title h4">Hướng dẫn cực chi
+                                                                                tiết cách kết nối webcam với máy tính
+                                                                            </h2>
+                                                                            <p class="card-text">Cùng với sự phát triển
+                                                                                của khoa học công nghệ, các phương thức
+                                                                                liên lạc đã trở nên thuận tiện và dễ
+                                                                                dàng hơn bao giờ hết. </p>
+                                                                            <a class="btn btn-primary" href="#!">Read
+                                                                                more →</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Blog post-->
+                                                                    <div class="card mb-4">
+                                                                        <a href="#!"><img class="card-img-top"
+                                                                                src="https://tudongvietphat.com/wp-content/uploads/2021/01/Tu-lanh-Casper-RM-680VBW-645l-4-cua-web4.jpg"
+                                                                                alt="..." /></a>
+                                                                        <div class="card-body">
+                                                                            <div class="small text-muted">January 1,
+                                                                                2021</div>
+                                                                            <h2 style="display: block;"
+                                                                                class="card-title h4">Nên mua tủ lạnh
+                                                                                hãng nào tiết kiệm điện tốt nhất 2021
+                                                                            </h2>
+                                                                            <p class="card-text">Do tủ lạnh là một loại
+                                                                                thiết bị gia dụng nhà bếp phải sử dụng
+                                                                                thường xuyên 24/24 nên rất dễ gây tốn
+                                                                                kém chi phí hóa đơn tiền điện.</p>
+                                                                            <a class="btn btn-primary" href="#!">Read
+                                                                                more →</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Pagination-->
+                                                            <nav aria-label="Pagination">
+                                                                <hr class="my-0" />
+                                                                <ul class="pagination justify-content-center my-4">
+                                                                    <li class="page-item disabled"><a class="page-link"
+                                                                            href="#" tabindex="-1"
+                                                                            aria-disabled="true">Newer</a></li>
+                                                                    <li class="page-item active" aria-current="page"><a
+                                                                            class="page-link" href="#!">1</a></li>
+                                                                    <li class="page-item"><a class="page-link"
+                                                                            href="#!">2</a></li>
+                                                                    <li class="page-item"><a class="page-link"
+                                                                            href="#!">3</a></li>
+                                                                    <li class="page-item disabled"><a class="page-link"
+                                                                            href="#!">...</a></li>
+                                                                    <li class="page-item"><a class="page-link"
+                                                                            href="#!">15</a></li>
+                                                                    <li class="page-item"><a class="page-link"
+                                                                            href="#!">Older</a></li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                        <!-- Side widgets-->
+                                                        <div class="col-lg-4">
+                                                            <!-- Search widget-->
+                                                            <div class="card mb-4">
+                                                                <div class="card-header">Search</div>
+                                                                <div class="card-body">
+                                                                    <div class="input-group">
+                                                                        <input class="form-control" type="text"
+                                                                            placeholder="Enter search term..."
+                                                                            aria-label="Enter search term..."
+                                                                            aria-describedby="button-search" />
+                                                                        <button class="btn btn-primary"
+                                                                            id="button-search"
+                                                                            type="button">Go!</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Categories widget-->
+                                                            <div class="card mb-4">
+                                                                <div class="card-header">About us</div>
+                                                                <div class="card-body">
+                                                                    <p>Trang blog chính thức này của Shopee Việt Nam
+                                                                        được ra đời sứ mệnh giúp người dùng mua sắm dễ
+                                                                        dàng hơn. Tại đây, bạn có thể tìm được cho mình
+                                                                        các kiến thức về xu hướng thời trang, review
+                                                                        công
+                                                                        nghệ, mẹo làm đẹp, tin tức tiêu dùng và deal giá
+                                                                        tốt bất ngờ. Trở thành người mua sắm thông thái
+                                                                        cùng Shopee Blog ngay hôm nay!</p>
+                                                                    <!-- <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <ul class="list-unstyled mb-0">
+                                                                                <li><a href="#!">Web Design</a></li>
+                                                                                <li><a href="#!">HTML</a></li>
+                                                                                <li><a href="#!">Freebies</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <ul class="list-unstyled mb-0">
+                                                                                <li><a href="#!">JavaScript</a></li>
+                                                                                <li><a href="#!">CSS</a></li>
+                                                                                <li><a href="#!">Tutorials</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                            <!-- Side widget-->
+                                                            <div class="card mb-4">
+                                                                <div class="card-header">Side Widget</div>
+                                                                <div class="card-body">You can put anything you want
+                                                                    inside of these side widgets. They are easy to use,
+                                                                    and feature the Bootstrap 5 card component!</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Footer-->
+                                                <footer class="py-5 bg-dark">
+                                                    <div class="container">
+                                                        <p class="m-0 text-center text-white">Copyright &copy; Your
+                                                            Website 2022</p>
+                                                    </div>
+                                                </footer>
+                                                <!-- Bootstrap core JS-->
+                                                <script
+                                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                                                <!-- Core theme JS-->
+                                                <!-- <script src="js/scripts.js"></script> -->
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="EX2" class="tabcontent-lab6">
+                            <!-- <div class="main-lab4">
+                                <div class="tab">
+                                    <button class="tablinksE2"
+                                        onclick="openCityE2(event, 'DesignE2')">Design</button>
+                                    <button class="tablinksE2" onclick="openCityE2(event, 'ImplementE2')">Implement</button>                             
+                                </div>
+                                <div id="DesignE2" class="tabcontent-ex2" style="background-color: #000;">
+                                    <a href="fuck it" style="color: #f30c28; font-size: 40px;"></a>
+                                    <img src="./images/bg-home.jpg" alt="" style="width: 100%;" height="100%">
+                                    
+                                </div>
+                                <div id="ImplementE2" class="tabcontent-ex2" style="background-color: #ccc;">
+                                    
+                                    <div class="web-Labb7">
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div> -->
+                            <div class="tab-lab3">
+                                <div class="container-ex2">
+                                    <div style="height: 1000px;" class="tabs-ex2">
+                                        <div class="tabby-tab-ex2">
+                                            <input type="radio" id="ex2-design" name="tabby-tabs-ex2" checked>
+                                            <label for="ex2-design">Design</label>
+                                            <div class="tabby-content-ex2">
+
+                                                <div style="align-items: flex-start;" class="container-design-lab1">
+
+                                                    <div style="flex: 1" class="on-giay">
+                                                        <h4>Design on paper</h4>
+                                                        <div class="design-by-figma">
+                                                            <div class="design-lab1-1">
+                                                                <img style="width:100% ; height: 100%;"
+                                                                    src="assets/img/ex2-trenGiay.jpg" alt="bbbb">
+                                                                <a href="assets/img/ex2-trenGiay.jpg"
+                                                                    download="design lab1 by figma"><button
+                                                                        class="btn-download">Download</button></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="flex: 1;" class="on-figma">
+                                                        <h4>Design on figma</h4>
+
+                                                        <div class="design-by-figma">
+                                                            <div class="design-lab1-1">
+                                                                <img src="assets/img/design-ex2.png" alt="">
+                                                                <a href="assets/img/design-ex2.png"
+                                                                    download="design lab1 by figma"><button
+                                                                        class="btn-download">Download</button></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 10px;"
+                                                    class="btn-goToDs">
+                                                    <button class="btn-3"><span><a
+                                                                href="https://www.figma.com/community/file/1046698666439555184/Lab3-Ex2">View
+                                                                Design</a></span></button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="tabby-tab-ex2">
+                                            <input type="radio" id="ex2-implement" name="tabby-tabs-ex2">
+                                            <label for="ex2-implement">Implement</label>
+                                            <div class="tabby-content-ex1">
+                                                <div class="implement-ex2">
+                                                    <div class="offcanvas-menu-wrapper">
+                                                        <div class="offcanvas__search">
+                                                            <i class="fa fa-search search-switch"></i>
+                                                        </div>
+                                                        <div class="offcanvas__logo">
+                                                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                                                        </div>
+                                                        <nav class="offcanvas__menu mobile-menu">
+                                                            <ul>
+                                                                <li class="active"><a href="./index.html">Home</a></li>
+                                                                <li><a href="./about.html">About</a></li>
+                                                                <li><a href="./blog.html">Blog</a></li>
+                                                                <li><a href="./contact.html">Contact</a></li>
+                                                            </ul>
+                                                        </nav>
+                                                        <div id="mobile-menu-wrap"></div>
+                                                        <ul class="offcanvas__widget">
+                                                            <li><i class="fa fa-map-marker"></i> 96 Ernser Vista Suite
+                                                                437, NY, US</li>
+                                                            <li><i class="fa fa-phone"></i> (123) 456-78-910</li>
+                                                            <li><i class="fa fa-envelope"></i> Info@colorlib.com</li>
+                                                        </ul>
+                                                        <div class="offcanvas__language">
+                                                            <img src="img/flag.png" alt="">
+                                                            <span>English</span>
+                                                            <i class="fa fa-angle-down"></i>
+                                                            <ul>
+                                                                <li><a href="#">English</a></li>
+                                                                <li><a href="#">Bangla</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Offcanvas Menu End -->
+
+                                                    <!-- Header Section Begin -->
+                                                    <header class="header">
+                                                        <div class="header__top">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-lg-9">
+                                                                        <ul class="header__top__widget">
+                                                                            <li><i class="fa fa-map-marker"></i> 96
+                                                                                Ernser Vista Suite 437, NY, US</li>
+                                                                            <li><i class="fa fa-phone"></i> (123)
+                                                                                456-78-910</li>
+                                                                            <li><i class="fa fa-envelope"></i>
+                                                                                Info@colorlib.com</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-lg-3">
+                                                                        <div class="header__top__language">
+                                                                            <img src="img/flag.png" alt="">
+                                                                            <span>English</span>
+                                                                            <i class="fa fa-angle-down"></i>
+                                                                            <ul>
+                                                                                <li><a href="#">English</a></li>
+                                                                                <li><a href="#">Bangla</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-lg-3">
+                                                                    <div class="header__logo">
+                                                                        <a href="./index.html"><img src="img/logo.png"
+                                                                                alt=""></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-9">
+                                                                    <div class="header__nav">
+                                                                        <nav class="header__menu">
+                                                                            <ul>
+                                                                                <li class="active"><a
+                                                                                        href="./index.html">Home</a>
+                                                                                </li>
+                                                                                <li><a href="./about.html">About</a>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="./services.html">Services</a>
+                                                                                </li>
+                                                                                <li><a href="./blog.html">Blog</a></li>
+                                                                            </ul>
+                                                                        </nav>
+                                                                        <div class="header__search">
+                                                                            <i class="fa fa-search search-switch"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="canvas__open">
+                                                                <span class="fa fa-bars"></span>
+                                                            </div>
+                                                        </div>
+                                                    </header>
+                                                    <!-- Header Section End -->
+
+                                                    <!-- Hero Section Begin -->
+                                                    <div class="hero set-bg" data-setbg="img/hero-bg.jpg"
+                                                        style="background-image: url(img/hero-bg.jpg); ">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-lg-5">
+                                                                    <div class="hero__text">
+                                                                        <h3 style="color: aliceblue;">Find The Best
+                                                                            Monthly Payment</h3>
+                                                                        <p>Apply for our business loan in minutes,
+                                                                            without painful</p>
+                                                                        <a href="#" class="primary-btn">Get Start</a>
+                                                                        <!-- <a href="#" class="primary-btn howit-btn">How It Work</a> -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-5 offset-lg-2">
+                                                                    <div class="hero__form">
+                                                                        <h3>How much you need</h3>
+                                                                        <form action="#">
+                                                                            <div class="input-list">
+                                                                                <div class="input-list-item">
+                                                                                    <p>Amount of money:</p>
+                                                                                    <input type="text">
+                                                                                </div>
+                                                                                <div class="input-list-item">
+                                                                                    <p>How long for (day):</p>
+                                                                                    <input type="text">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="input-full-width">
+                                                                                <p>Repayment:</p>
+                                                                                <input type="text">
+                                                                            </div>
+                                                                            <div class="input-list last">
+                                                                                <div class="input-list-item">
+                                                                                    <p>Name:</p>
+                                                                                    <input type="text">
+                                                                                </div>
+                                                                                <div class="input-list-item">
+                                                                                    <p>Phone:</p>
+                                                                                    <input type="text">
+                                                                                </div>
+                                                                            </div>
+                                                                            <button type="submit" class="site-btn">Get
+                                                                                Your Loan Now!</button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <script>
+                        // tab
+                        function openCityL6(evtL6, cityNameL6) {
+                            var iL6, tabcontentL6, tablinksL6;
+                            tabcontentL6 = document.getElementsByClassName("tabcontent-lab6");
+                            for (iL6 = 0; iL6 < tabcontentL6.length; iL6++) {
+                                tabcontentL6[iL6].style.display = "none";
+                            }
+                            tablinksL6 = document.getElementsByClassName("tablinksL6");
+                            for (iL6 = 0; iL6 < tablinksL6.length; iL6++) {
+                                tablinksL6[iL6].className = tablinksL6[iL6].className.replace(" active", "");
+                            }
+                            document.getElementById(cityNameL6).style.display = "block";
+                            evtL6.currentTarget.className += " active";
+                        }
+                        // tab
+                    </script>
+                    <script>
+                        // tab ex1
+                        function openCityE1(evt, cityName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent-ex1");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablinksE1");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+                        // tab ex1
+                        function openCityE2(evt, cityName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent-ex2");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablinksE2");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+
+                    </script>
+
+                </section>
+                <section>
+                    <!-- lab7 -->
+                    <div class="main-lab4">
+                        <div class="tab">
+                            <button class="tablinksL7" onclick="openCityL7(event, 'RequirementL7')">Requirement</button>
+                            <button class="tablinksL7" onclick="openCityL7(event, 'DesignL7')">Design</button>
+                            <button class="tablinksL7" onclick="openCityL7(event, 'ImplementL7')">Implement</button>
+                        </div>
+                        <div id="RequirementL7" class="tabcontentL7">
+
+                            <p class="req"><span style="font-size: 20px;">&#8226;</span>Tạo một trang Web có nội dung
+                                bất kỳ, sử dụng linh hoạt tất cả những phần sau: Input Controls, Navigation, Animations,
+                                Default Settings, Guided Actions </p>
+                            <div class="req"><span style="font-size: 20px;">&#8226;</span>Có biểu mẫu liên hệ</div>
+                            <div class="req"><span style="font-size: 20px;">&#8226;</span>Upload lên github</div>
+
+                        </div>
+
+                        <div id="DesignL7" class="tabcontentL7">
+                            <img src="./images/slider-1-slide-2-1770x742.jpg" alt="" style="width: 100%;" height="100%">
+                        </div>
+
+                        <div id="ImplementL7" class="tabcontentL7">
+                            
+                        </div>
+                    </div>
+                    <script>
+                        // tab ex1
+                        function openCityL7(evt, cityName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontentL7");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablinksL7");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+
+                    </script>
+
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+
+    <script>
+        // menu 
+        var heading = document.getElementById('headingL');
+        var mobileMenu = document.getElementById('mobile-menuL');
+        var headingHeight = heading.clientHeight;
+
+        mobileMenu.onclick = function () {
+            var isClosed = heading.clientHeight == headingHeight;
+            if (isClosed) {
+                heading.style.height = 'auto';
+            } else {
+                heading.style.height = null;
+            }
+        }
+        // menu
+
+
+    </script>
+
+</body>
+
+</html>

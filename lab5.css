@@ -6,16 +6,16 @@
 html {
     font-family: Helvetica,  Arial, sans-serif;
 }
-.main-lab4 {
+.main-lab5 {
     margin-top: 100px;
 }
-.tab {
+.tab-lab5 {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
   
-.tab button {
+.tab-lab5 button {
     background-color: inherit;
     float: left;
     border: none;
@@ -27,41 +27,50 @@ html {
 }
 
   
-.tab button:hover {
+.tab-lab5 button:hover {
     background-color: #ddd;
   }
   
   
-.tab button.active {
+.tab-lab5 button.active {
     background-color: #ccc;
   }
-  
-div#Requirement {
+div#RequirementL7,
+div#DesignE2,
+div#DesignE1,
+div#Requirement-lab6,
+div#Requirement-lab5 {
     display: block;
     padding: 20px;
 }
-.tabcontent {
+.tabcontentL7,
+.tabcontent-ex2,
+.tabcontent-ex1,
+.tabcontent-lab6,
+.tabcontent-lab5 {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
 }
-.tabcontent .req {
+.tabcontentL7 .req,
+.tabcontent-lab6 .req,
+.tabcontent-lab5 .req {
     line-height: 1.6;
     opacity: 0.7;
 }
-#Implement {
+#Implement-lab5 {
     /* text-align: center; */
     line-height: 3.0;
 }
-div#User-scenario {
+div#User-scenario-lab5 {
     text-align: center;
 }
 .images {
     display: flex;
     margin: 0 auto;
 }
-#Design .figma-btn {
+#Design-lab5 .figma-btn {
     margin-left: 10px;
 }
 .images {
@@ -72,27 +81,27 @@ div#User-scenario {
     text-align: center;
 }
 
-#Design .btn-download {
+#Design-lab5 .btn-download-lab5 {
     display: flex;
     cursor: pointer;
 }
 .btn-dl {
     text-decoration: none;
 }
-#Design .btn-download,
-#Design .figma-btn {
+#Design-lab5 .btn-download-lab5,
+#Design-lab5 .figma-btn {
     color: #fff;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
     background-color: #000;
 }
-#Design .btn-download:hover,
-#Design .figma-btn:hover {
+#Design-lab5 .btn-download-lab5:hover,
+#Design-lab5 .figma-btn:hover {
     background-color: #ccc;
     color: #000;
 }
-#Design .help-block {
+#Design-lab5 .help-block {
     height: 20px;
 }
 #nameInput,
