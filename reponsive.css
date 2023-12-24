@@ -9,7 +9,7 @@
     /* tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
     #container-home {
-        display: block;
+        display: block !important;
     }
     .img-home {
         display: flex;
