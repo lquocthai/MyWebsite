@@ -72,6 +72,9 @@ html {
     height: 64.8px;
     overflow: hidden;
 }
+.containerL {
+    display: flex;
+}
 
 #headingL .containerL,
 #heading .container {
