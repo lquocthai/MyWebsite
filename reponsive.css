@@ -35,7 +35,7 @@
     }
     .containerL .nav-linkL,
     .container .nav-link{
-        display: block;
+        display: block !important;
     }
     .navL>ul>li,
     .nav>ul>li {
