@@ -188,7 +188,7 @@ html {
     padding: 95px 15px;
     color: #000;
     text-shadow: 1px 1px 3px #fff;
-    margin-left: 48px;
+    /* margin-left: 48px; */
 }
 
 .infor-home>h2,
