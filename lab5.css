@@ -80,7 +80,7 @@ div#User-scenario-lab5 {
 .view-design {
     text-align: center;
 }
-
+.btn-download-l6,
 #Design-lab5 .btn-download-lab5 {
     display: flex;
     cursor: pointer;
@@ -88,6 +88,7 @@ div#User-scenario-lab5 {
 .btn-dl {
     text-decoration: none;
 }
+.btn-download-l6,
 #Design-lab5 .btn-download-lab5,
 #Design-lab5 .figma-btn {
     color: #fff;
@@ -96,6 +97,7 @@ div#User-scenario-lab5 {
     border-radius: 5px;
     background-color: #000;
 }
+.btn-download-l6:hover,
 #Design-lab5 .btn-download-lab5:hover,
 #Design-lab5 .figma-btn:hover {
     background-color: #ccc;

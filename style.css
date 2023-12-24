@@ -17,6 +17,9 @@ html {
     background-color: #ccc;
     overflow: hidden;
 }
+.text-notunderline {
+    text-decoration: none;
+}
 
 .text-white {
     color: #fff;
