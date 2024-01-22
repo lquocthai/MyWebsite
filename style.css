@@ -67,13 +67,16 @@ html {
 .col-half {
     width: 50%;
 }
-
+.heading.menu_hide {
+    transform: translateY(-80px);   
+}
 #headingL,
 #heading {
     background-color: #000;
     z-index: 1;
     height: 64.8px;
     overflow: hidden;
+    transition: transform .5s;  
 }
 .containerL {
     display: flex;
